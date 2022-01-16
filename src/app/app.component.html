@@ -1,7 +1,12 @@
-<div class="search-box">
-  <input class="text-box" type="text"  #myInput placeholder="Github Username">
+
+<div class="navbar">
+  <a style="text-align: left; font-family: 'Dongle', sans-serif; font-size: 30px;">Github User Search</a>
+  <h1 style="text-align: center; font-family: 'Dongle', sans-serif;">Enter Github username to see profile and repositories</h1>
 </div>
-  <button class="search" (click)="onSearchBtnClick(myInput.value)">Search</button>
+<div class="search-box">
+  <input class="text-box" type="text"  #myInput placeholder="Github Username" style="font-family: 'Oxygen', sans-serif; font-size:20px;">
+</div>
+  <button class="search" (click)="onSearchBtnClick(myInput.value)" style="font-family: 'Dongle', sans-serif; font-size: 25px;">Search</button>
 
 <div class="row">
   <div class="column">
