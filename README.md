@@ -6,7 +6,7 @@ Angular App to search repositories of github users with username. Created with V
 
 ## Usage
 
-git clone https://github.com/edwardmbitsi/Angular-week-2
-cd Angular-week-2
-npm install
-ng serve
+### git clone https://github.com/edwardmbitsi/Angular-week-2
+### cd Angular-week-2
+### npm install
+### ng serve
