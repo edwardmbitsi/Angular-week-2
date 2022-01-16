@@ -1,8 +1,8 @@
 
-<div class="navbar">
-  <a style="text-align: left; font-family: 'Dongle', sans-serif; font-size: 30px;">Github User Search</a>
-  <h1 style="text-align: center; font-family: 'Dongle', sans-serif;">Enter Github username to see profile and repositories</h1>
+<div class="navbar" style="background-color: #000814;">
+  <a style="text-align: left; font-family: 'Dongle', sans-serif; font-size: 30px; color: white; padding-left: 1cm;">Github User Search</a>
 </div>
+<h1 style="text-align: center; font-family: 'Dongle', sans-serif;">Enter Github username to see profile and repositories</h1>
 <div class="search-box">
   <input class="text-box" type="text"  #myInput placeholder="Github Username" style="font-family: 'Oxygen', sans-serif; font-size:20px;">
 </div>
@@ -11,18 +11,17 @@
 <div class="row">
   <div class="column">
     <div *ngFor="let user of users">
-      <h4>{{user.login}}</h4>
+      <h4 style="font-family: 'Abril Fatface', cursive; font-size:30px">{{user.login}}</h4>
       <img [src]="user.avatar_url" [alt]="user.login">
-      <button (click)="onViewRepoBtnClick(user)" class="search">View Repos</button>
+      <button (click)="onViewRepoBtnClick(user)" class="search" style="font-family: 'Dongle', sans-serif; font-size: 25px;">View Repos</button>
     </div>
   </div>
   <div class="column">
-    <div *ngFor="let repo of repos" style="text-align: center;">
+    <div *ngFor="let repo of repos" style="text-align: center; font-family: 'Dongle', sans-serif; font-size: 30px; margin: 0; color: white;">
       {{repo.name}}
     </div>
   </div>
 </div>
-
 
 
 
